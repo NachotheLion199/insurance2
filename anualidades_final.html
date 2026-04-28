@@ -1,0 +1,498 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Anualidades - Z&H Florida Group</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#1f4385",
+                    "inverse-primary": "#afc6ff",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#c7c6c6",
+                    "on-secondary-container": "#005c70",
+                    "tertiary-container": "#454545",
+                    "on-surface": "#191c1e",
+                    "outline": "#747782",
+                    "surface-tint": "#3c5da0",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-tertiary-fixed-variant": "#464747",
+                    "surface-container-high": "#e6e8ea",
+                    "outline-variant": "#c4c6d2",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#52d9fd",
+                    "on-background": "#191c1e",
+                    "primary-fixed": "#d9e2ff",
+                    "primary": "#002c6a",
+                    "surface-container-low": "#f2f4f6",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#93b2fc",
+                    "inverse-surface": "#2d3133",
+                    "surface-bright": "#f7f9fb",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#b2ebff",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#001944",
+                    "on-error": "#ffffff",
+                    "surface": "#f7f9fb",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "surface-dim": "#d8dadc",
+                    "secondary": "#00677d",
+                    "secondary-fixed-dim": "#4fd6fa",
+                    "background": "#f7f9fb",
+                    "on-primary-fixed-variant": "#214486",
+                    "on-secondary-fixed-variant": "#004e5e",
+                    "inverse-on-surface": "#eff1f3",
+                    "primary-fixed-dim": "#afc6ff",
+                    "tertiary-fixed": "#e4e2e2",
+                    "on-tertiary-container": "#b3b2b2",
+                    "surface-container": "#eceef0",
+                    "on-surface-variant": "#434750",
+                    "on-secondary-fixed": "#001f27",
+                    "surface-variant": "#e0e3e5",
+                    "tertiary": "#2e2f2f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 32px 48px -4px rgba(25, 28, 30, 0.06);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky z-50 glass-nav shadow-sm">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<a class="text-xl font-headline font-bold tracking-tight text-primary" href="index.html">
+                Z&amp;H Florida Group
+            </a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 hover:text-primary transition-colors font-medium" href="index.html">Inicio</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-medium" href="seguro_final.html">Seguro de Vida</a>
+<a class="text-blue-700 font-semibold border-b-2 border-blue-700 pb-1" href="anualidades_final.html">Anualidades</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-medium" href="inversiones_final.html">IUL</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-medium" href="index.html#nosotros">Nosotros</a>
+<a class="text-slate-600 hover:text-primary transition-colors font-medium" href="index.html#contacto">Contacto</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold scale-95 active:opacity-80 transition-transform shadow-lg shadow-primary/20 inline-block" href="https://wa.me/19545807679" target="_blank">Solicitar Cotización</a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0fzqkiNfOWOunKgwX-XbZLwUysO0YWz4kv-1VO4q28qmf7Sl6qQF3sdl1ug14C-ZbumK5MWRlac4fs1eq94qf2qQk6jDZAwyuvcEDpknb8ujUQsLcKBA8TjXNBYG7S0D1YmbzCzqe5qutLEfEsnThfyUrAbX2fkb9Nosklp4GSnFRcGucsnhpi9db1cwEK_xVAxiirdG8BSUaoOAEslfkInh_LsLe0lcpFdB9l5sGzXrnpV6RFmhEItsD29xbTkgqbBi8I_PG_iAx" alt="Pareja caminando en la playa al atardecer">
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+</div>
+<div class="container mx-auto px-6 relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-sm font-bold tracking-wider mb-6">
+                        SEGURIDAD FINANCIERA
+                    </span>
+<h1 class="text-display-sm md:text-6xl font-headline font-extrabold text-primary leading-[1.1] mb-8">
+                        Garantice su retiro con confianza.
+                    </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed mb-10 max-w-2xl">
+                        Proteja su futuro con soluciones de anualidades diseñadas para proporcionar ingresos estables y crecimiento con ventajas fiscales.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl transition-all text-center" href="https://wa.me/19545807679" target="_blank" rel="noopener noreferrer">
+                            Consultoría Gratuita
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- What are Annuities - Editorial Layout -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-primary-fixed rounded-full opacity-30 blur-3xl"></div>
+<img class="rounded-xl shadow-2xl relative z-10 transform -rotate-2 hover:rotate-0 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCReyD5KKNOH8hFsRuCgZYejy1tCuM56Ir1Ltwyg-V_wKZpFtXf2qBKV1WLfk6FSJT0NXVYCvI5AwHauW0HcoN0ImLlvkjAUzBzdHmkTLRsKSvu6LBtAlJbO-JwlIf-lKTsNn7W8Fxifv9gyKgo5jWPb1Y473vfoqm2agOac7PHb4zPf1ax0x8nXmu1MXFQRkyKOeOpNWnzY3GGoHR_yN8n8lQ5oV5s4WEBpA0QLyEQR0O8KZ4McHM4cTE3K52qEps5wAox1o3X2_uQ" alt="Firma profesional de documento financiero">
+<div class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-xl text-on-primary shadow-xl z-20 hidden md:block">
+<p class="text-4xl font-headline font-bold">100%</p>
+<p class="text-sm uppercase tracking-widest font-semibold opacity-80">Tranquilidad Mental</p>
+</div>
+</div>
+<div>
+<h2 class="text-4xl font-headline font-bold text-primary mb-6 leading-tight">¿Qué es una Anualidad?</h2>
+<div class="space-y-6 text-body-lg text-on-surface-variant leading-relaxed">
+<p>
+                                Una anualidad es un contrato entre usted y una compañía de seguros diseñado para acumular fondos y, posteriormente, proporcionar una serie de pagos garantizados durante el retiro.
+                            </p>
+<p>
+                                Es una herramienta poderosa para quienes buscan eliminar el riesgo de sobrevivir a sus ahorros, convirtiendo una suma global o pagos periódicos en un flujo de ingresos de por vida.
+                            </p>
+</div>
+<div class="mt-10 grid grid-cols-2 gap-6">
+<div class="p-4 border-l-4 border-secondary bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary block mb-2">security</span>
+<h4 class="font-bold text-primary">Ingreso Seguro</h4>
+</div>
+<div class="p-4 border-l-4 border-secondary bg-surface-container-lowest">
+<span class="material-symbols-outlined text-secondary block mb-2">trending_up</span>
+<h4 class="font-bold text-primary">Crecimiento Fiscal</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Types of Annuities - Bento Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline font-bold text-primary mb-4">Soluciones a su Medida</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Explore las diferentes estructuras de anualidades y encuentre la que mejor se adapte a su perfil de riesgo y metas financieras.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Fixed -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow group hover:-translate-y-2 transition-transform">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">account_balance</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Anualidades Fijas</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                            Ofrecen una tasa de interés garantizada por un período determinado. Es la opción más segura, similar a un certificado de depósito pero con ventajas fiscales.
+                        </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-secondary mr-2 text-lg">check_circle</span> Principal Protegido
+                            </li>
+<li class="flex items-center text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-secondary mr-2 text-lg">check_circle</span> Interés Predecible
+                            </li>
+</ul>
+</div>
+<!-- Indexed -->
+<div class="bg-primary-container p-8 rounded-xl shadow-2xl relative overflow-hidden group hover:-translate-y-2 transition-transform">
+<div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150"></div>
+<div class="w-14 h-14 rounded-full bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">show_chart</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-white mb-4">Anualidades Indexadas</h3>
+<p class="text-on-primary-container mb-6 leading-relaxed">
+                            Combinan la seguridad de una anualidad fija con el potencial de crecimiento de los índices del mercado, sin exponer su principal a las pérdidas.
+                        </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center text-sm font-medium text-white">
+<span class="material-symbols-outlined text-secondary-container mr-2 text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span> Potencial de Mercado
+                            </li>
+<li class="flex items-center text-sm font-medium text-white">
+<span class="material-symbols-outlined text-secondary-container mr-2 text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span> Protección contra Caídas
+                            </li>
+</ul>
+</div>
+<!-- Variable -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow group hover:-translate-y-2 transition-transform">
+<div class="w-14 h-14 rounded-full bg-secondary-fixed flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-fixed text-3xl">insights</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Anualidades Variables</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                            Permiten invertir en sub-cuentas similares a fondos mutuos. Ofrecen el mayor potencial de crecimiento, aunque con mayor riesgo de mercado.
+                        </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-secondary mr-2 text-lg">check_circle</span> Diversificación Máxima
+                            </li>
+<li class="flex items-center text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-secondary mr-2 text-lg">check_circle</span> Opciones de Inversión
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Section - Asymmetric Layout -->
+<section class="py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2 order-2 lg:order-1">
+<h2 class="text-4xl font-headline font-bold text-primary mb-8 leading-tight">Beneficios Exclusivos de las Anualidades</h2>
+<div class="space-y-10">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">savings</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-primary mb-2">Crecimiento con Diferimiento de Impuestos</h4>
+<p class="text-on-surface-variant">Sus ganancias crecen sin pagar impuestos hasta que comience a retirar los fondos, permitiendo que su dinero se capitalice más rápido.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">payments</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-primary mb-2">Ingresos de por Vida Garantizados</h4>
+<p class="text-on-surface-variant">Transforme sus ahorros en un cheque mensual que no podrá agotar, sin importar cuánto tiempo viva.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">family_restroom</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-primary mb-2">Beneficio por Fallecimiento</h4>
+<p class="text-on-surface-variant">Asegure que sus beneficiarios reciban el valor del contrato en caso de su fallecimiento, evitando procesos de sucesión costosos.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 relative order-1 lg:order-2">
+<div class="relative z-10 p-4 bg-white rounded-2xl shadow-2xl">
+<img class="rounded-xl w-full h-[500px] object-cover" src="images/jose_luis_client.jpg" alt="Asesor financiero explicando opciones de anualidades">
+</div>
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+<div class="absolute top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="py-24 bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-white rounded-[2rem] overflow-hidden flex flex-col lg:flex-row text-on-surface editorial-shadow">
+<div class="lg:w-2/5 bg-primary-container p-12 text-on-primary flex flex-col justify-between">
+<div>
+<h2 class="font-headline text-4xl font-bold mb-6">Asegure su jubilación hoy.</h2>
+<p class="text-on-primary-container text-lg mb-12">Como agentes con licencia, Jose Luis Zavalaga y su equipo le ayudarán a navegar las opciones y encontrar el plan perfecto para su retiro.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">call</span>
+<span>+1 (954) 580-7679</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">mail</span>
+<span>info@zhflorida.com</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">location_on</span>
+<span>Davie, FL - Servimos a todo el estado.</span>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">social_leaderboard</span>
+</div>
+<div class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-3/5 p-12 bg-white flex flex-col justify-center">
+    <p class="text-sm font-semibold text-slate-500 mb-8 flex items-center gap-2">
+        <span class="material-symbols-outlined text-green-600 text-lg">lock</span> 
+        Toda su información es confidencial. Recibirá una respuesta de Jose Luis en menos de 24 horas.
+    </p>
+    <form id="contacto-form" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-2">
+            <label class="text-sm font-bold uppercase tracking-wider text-slate-500">Nombre Completo</label>
+            <input id="nombre" class="w-full bg-surface-container-low border-b-2 border-outline-variant/15 focus:border-primary px-4 py-3 rounded-t-lg focus:outline-none transition-all" placeholder="Ej: Jose Luis" type="text" required/>
+        </div>
+        <div class="space-y-2">
+            <label class="text-sm font-bold uppercase tracking-wider text-slate-500">Correo Electrónico</label>
+            <input id="email" class="w-full bg-surface-container-low border-b-2 border-outline-variant/15 focus:border-primary px-4 py-3 rounded-t-lg focus:outline-none transition-all" placeholder="email@ejemplo.com" type="email" required/>
+        </div>
+        <div class="space-y-2 md:col-span-2">
+            <label class="text-sm font-bold uppercase tracking-wider text-slate-500">Teléfono</label>
+            <input id="telefono" class="w-full bg-surface-container-low border-b-2 border-outline-variant/15 focus:border-primary px-4 py-3 rounded-t-lg focus:outline-none transition-all" placeholder="(786) 000-0000" type="tel" required/>
+        </div>
+        <div class="md:col-span-2 space-y-3">
+            <label class="text-sm font-bold uppercase tracking-wider text-slate-500">¿Qué tipo de anualidad le interesa?</label>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3" id="chip-container">
+                <div class="chip-option cursor-pointer text-center py-3 px-2 rounded-xl bg-surface-container-low border-2 border-transparent hover:border-primary transition-all text-sm font-semibold" data-value="Anualidad Fija">Fija</div>
+                <div class="chip-option cursor-pointer text-center py-3 px-2 rounded-xl bg-surface-container-low border-2 border-transparent hover:border-primary transition-all text-sm font-semibold" data-value="Anualidad Indexada">Indexada</div>
+                <div class="chip-option cursor-pointer text-center py-3 px-2 rounded-xl bg-surface-container-low border-2 border-transparent hover:border-primary transition-all text-sm font-semibold" data-value="Anualidad Variable">Variable</div>
+                <div class="chip-option cursor-pointer text-center py-3 px-2 rounded-xl bg-primary-container text-white border-primary transition-all text-sm font-semibold" data-value="General/No Seguro">No sé / General</div>
+            </div>
+            <input type="hidden" id="interes-hidden" value="General/No Seguro">
+        </div>
+        <div class="md:col-span-2 space-y-2">
+            <label class="text-sm font-bold uppercase tracking-wider text-slate-500">Mensaje / Notas adicionales</label>
+            <textarea id="mensaje" class="w-full bg-surface-container-low border-b-2 border-outline-variant/15 focus:border-primary px-4 py-3 rounded-t-lg focus:outline-none transition-all" placeholder="¿Cómo podemos ayudarle con su planificación de retiro?" rows="3"></textarea>
+        </div>
+        <div class="md:col-span-2 mt-4">
+            <button id="btn-submit" type="submit" class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold text-lg hover:scale-[1.01] transition-transform shadow-lg text-center flex items-center justify-center gap-2">
+                Solicitar Asesoría Gratuita <span class="material-symbols-outlined">send</span>
+            </button>
+            <p id="form-feedback" class="text-center font-semibold text-green-600 mt-4 hidden">¡Solicitud enviada exitosamente! Abriendo WhatsApp...</p>
+        </div>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chips = document.querySelectorAll('.chip-option');
+            const hiddenInput = document.getElementById('interes-hidden');
+            
+            chips.forEach(chip => {
+                chip.addEventListener('click', () => {
+                    chips.forEach(c => {
+                        c.classList.remove('bg-primary-container', 'text-white', 'border-primary');
+                        c.classList.add('bg-surface-container-low', 'border-transparent');
+                    });
+                    chip.classList.remove('bg-surface-container-low', 'border-transparent');
+                    chip.classList.add('bg-primary-container', 'text-white', 'border-primary');
+                    hiddenInput.value = chip.getAttribute('data-value');
+                });
+            });
+
+            const form = document.getElementById('contacto-form');
+            const btn = document.getElementById('btn-submit');
+            const feedback = document.getElementById('form-feedback');
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const data = {
+                    nombre: document.getElementById('nombre').value,
+                    email: document.getElementById('email').value,
+                    telefono: document.getElementById('telefono').value,
+                    interes: document.getElementById('interes-hidden').value,
+                    mensaje: document.getElementById('mensaje').value
+                };
+
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<span class="material-symbols-outlined animate-spin" style="animation: spin 1s linear infinite;">sync</span> Procesando...';
+                btn.disabled = true;
+
+                const url = 'https://script.google.com/macros/s/AKfycbxfpH2lek4YyOfaz7VYbXLWaOf_QxdLvxG-CDr3yALjzZINkWu45ACUm-s9L2G4Fy0wFQ/exec';
+                
+                try {
+                    await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                        body: JSON.stringify(data)
+                    });
+                    
+                    btn.style.display = 'none';
+                    feedback.classList.remove('hidden');
+
+                    const waMsg = "Hola! Soy " + data.nombre + ".\nEstoy interesado(a) en: *" + data.interes + "*.\nMi correo es: " + data.email + "\nMi teléfono es: " + data.telefono + "\n\nMensaje adicional: " + data.mensaje;
+                    const waLink = "https://wa.me/19545807679?text=" + encodeURIComponent(waMsg);
+                    
+                    setTimeout(() => {
+                        window.open(waLink, '_blank');
+                        setTimeout(() => {
+                            btn.style.display = 'flex';
+                            btn.innerHTML = originalText;
+                            btn.disabled = false;
+                            feedback.classList.add('hidden');
+                            form.reset();
+                        }, 3000);
+                    }, 1000);
+
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert("Hubo un error, pero te redirigiremos a WhatsApp.");
+                    window.open("https://wa.me/19545807679", '_blank');
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }
+            });
+        });
+    </script>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t-0">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 w-full px-8 py-16 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-lg font-bold text-primary mb-6 font-headline">Z&amp;H Florida Group</div>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">
+    Jose Luis Zavalaga - Licensed Insurance Agent. Brindando seguridad y asesoría financiera experta en el estado de Florida.
+</p>
+<div class="flex gap-3">
+    <a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-highest text-primary hover:bg-primary hover:text-white transition-all" href="https://www.facebook.com/people/ZH-Florida-Insurance/61584323117523/?sk=followers" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+    <a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-highest text-primary hover:bg-primary hover:text-white transition-all" href="https://www.instagram.com/zhfloridagroup/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
+    <a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-highest text-primary hover:bg-primary hover:text-white transition-all" href="https://www.linkedin.com/in/jose-zavalaga-38326a250" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6 uppercase text-xs tracking-widest">Servicios</h4>
+<ul class="space-y-4 text-sm font-medium">
+    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="seguro_final.html">Seguros de Vida</a></li>
+    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="anualidades_final.html">Anualidades</a></li>
+    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="inversiones_final.html">IUL</a></li>
+    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="seguro_final.html#gastos-finales">Gastos Finales</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6 uppercase text-xs tracking-widest">Compañía</h4>
+<ul class="space-y-4 text-sm font-medium">
+    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="index.html#nosotros">Sobre Nosotros</a></li>
+    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="index.html#contacto">Contacto</a></li>
+    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="preguntas_frecuentes_final.html">Preguntas Frecuentes</a></li>
+    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="privacidad_final.html">Aviso de Privacidad</a></li>
+    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="terminos_final.html">Términos de Servicio</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6 uppercase text-xs tracking-widest">Contacto</h4>
+<ul class="space-y-4 text-slate-500 text-sm">
+    <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-secondary">location_on</span>
+        <span>Davie, FL - Servimos a todo el estado</span>
+    </li>
+    <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-secondary">mail</span>
+        <span>info@zhflorida.com</span>
+    </li>
+    <li class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-secondary">call</span>
+        <span>+1 (954) 580-7679</span>
+    </li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200">
+<p class="text-center text-slate-500 text-sm">
+    © 2026 Z&amp;H Florida Group. Jose Luis Zavalaga - Licensed Insurance Agent. Todos los derechos reservados.
+</p>
+</div>
+</footer>
+
+</body></html>
