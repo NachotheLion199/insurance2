@@ -1,419 +1,546 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tax preparation, year-round bookkeeping and business formation in Davie, FL. Bilingual English and Spanish. Open all twelve months, Saturdays by appointment.">
+<meta name="theme-color" content="#1C1916">
+<link rel="icon" href="images/logo.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Z&amp;H Florida Group">
+<meta property="og:title" content="Z&amp;H Florida Group - Davie, Florida">
+<meta property="og:description" content="Tax preparation, year-round bookkeeping and business formation in Davie, FL. Bilingual English and Spanish. Open all twelve months, Saturdays by appointment.">
+<meta property="og:image" content="images/team-sign.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_US">
+<meta name="twitter:card" content="summary_large_image">
+<title>Z&amp;H Florida Group — Tax Preparation, Bookkeeping &amp; Business Formation in Davie, FL</title>
+<link rel="canonical" href="https://www.zhfloridagroup.com/">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "@id": "https://www.zhfloridagroup.com/#business",
+  "name": "Z&H Florida Group",
+  "url": "https://www.zhfloridagroup.com/",
+  "telephone": "+1-954-264-8555",
+  "image": "https://www.zhfloridagroup.com/images/team-sign.jpg",
+  "logo": "https://www.zhfloridagroup.com/images/logo.jpg",
+  "priceRange": "$$",
+  "currenciesAccepted": "USD",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4800 SW 64th Ave, Suite 103",
+    "addressLocality": "Davie",
+    "addressRegion": "FL",
+    "postalCode": "33314",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {"@type":"City","name":"Davie"},{"@type":"City","name":"Hollywood"},
+    {"@type":"City","name":"Pembroke Pines"},{"@type":"City","name":"Miramar"},
+    {"@type":"AdministrativeArea","name":"Broward County"}
+  ],
+  "knowsLanguage": ["en-US","es-US"],
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"14:00"}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": [
+      {"@type":"Offer","priceCurrency":"USD","price":"150","itemOffered":{"@type":"Service","name":"Individual tax return preparation","url":"https://www.zhfloridagroup.com/tax-preparation.html"}},
+      {"@type":"Offer","priceCurrency":"USD","price":"275","itemOffered":{"@type":"Service","name":"Self-employed and 1099 tax return preparation","url":"https://www.zhfloridagroup.com/tax-preparation.html"}},
+      {"@type":"Offer","priceCurrency":"USD","price":"200","itemOffered":{"@type":"Service","name":"Monthly bookkeeping","url":"https://www.zhfloridagroup.com/bookkeeping.html"}},
+      {"@type":"Offer","priceCurrency":"USD","price":"350","itemOffered":{"@type":"Service","name":"LLC formation and EIN","url":"https://www.zhfloridagroup.com/business-formation.html"}}
+    ]
+  },
+  "founder": [
+    {"@type":"Person","name":"Sonia Rosa","jobTitle":"Tax Preparation & Bookkeeping"},
+    {"@type":"Person","name":"José Luis Zavalaga","jobTitle":"Tax Preparation & Bookkeeping"}
+  ]
+}
+</script>
 
-<html class="light" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Z&amp;H Florida Group | Seguros y Finanzas</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "primary-container": "#1f4385",
-                      "inverse-primary": "#afc6ff",
-                      "error": "#ba1a1a",
-                      "tertiary-fixed-dim": "#c7c6c6",
-                      "on-secondary-container": "#005c70",
-                      "tertiary-container": "#454545",
-                      "on-surface": "#191c1e",
-                      "outline": "#747782",
-                      "surface-tint": "#3c5da0",
-                      "surface-container-highest": "#e0e3e5",
-                      "on-tertiary-fixed-variant": "#464747",
-                      "surface-container-high": "#e6e8ea",
-                      "outline-variant": "#c4c6d2",
-                      "error-container": "#ffdad6",
-                      "secondary-container": "#52d9fd",
-                      "on-background": "#191c1e",
-                      "primary-fixed": "#d9e2ff",
-                      "primary": "#002c6a",
-                      "surface-container-low": "#f2f4f6",
-                      "on-primary": "#ffffff",
-                      "surface-container-lowest": "#ffffff",
-                      "on-secondary": "#ffffff",
-                      "on-primary-container": "#93b2fc",
-                      "inverse-surface": "#2d3133",
-                      "surface-bright": "#f7f9fb",
-                      "on-error-container": "#93000a",
-                      "secondary-fixed": "#b2ebff",
-                      "on-tertiary": "#ffffff",
-                      "on-primary-fixed": "#001944",
-                      "on-error": "#ffffff",
-                      "surface": "#f7f9fb",
-                      "on-tertiary-fixed": "#1b1c1c",
-                      "surface-dim": "#d8dadc",
-                      "secondary": "#00677d",
-                      "secondary-fixed-dim": "#4fd6fa",
-                      "background": "#f7f9fb",
-                      "on-primary-fixed-variant": "#214486",
-                      "on-secondary-fixed-variant": "#004e5e",
-                      "inverse-on-surface": "#eff1f3",
-                      "primary-fixed-dim": "#afc6ff",
-                      "tertiary-fixed": "#e4e2e2",
-                      "on-tertiary-container": "#b3b2b2",
-                      "surface-container": "#eceef0",
-                      "on-surface-variant": "#434750",
-                      "on-secondary-fixed": "#001f27",
-                      "surface-variant": "#e0e3e5",
-                      "tertiary": "#2e2f2f"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "fontFamily": {
-                      "headline": ["Manrope"],
-                      "body": ["Inter"],
-                      "label": ["Inter"]
-              }
-            },
-          },
-        }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .editorial-gradient {
-            background: linear-gradient(135deg, #002c6a 0%, #1f4385 100%);
-        }
-        .sunken-shadow {
-            box-shadow: 0 10px 48px -4px rgba(25, 28, 30, 0.06);
-        }
-    </style>
 </head>
-<body class="bg-surface font-body text-on-surface">
-<!-- TopNavBar -->
-<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none sticky top-0 z-50 transition-all duration-300">
-<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-<a class="text-xl font-bold tracking-tight text-blue-900 dark:text-white" href="#" style="">Z&amp;H Florida Group</a>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-blue-700 dark:text-blue-300 font-semibold border-b-2 border-blue-700 pb-1" href="index.html" style="">Inicio</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="seguro_final.html" style="">Seguro de Vida</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="anualidades_final.html" style="">Anualidades</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="inversiones_final.html" style="">IUL</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="index.html#nosotros" style="">Nosotros</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 transition-colors" href="index.html#contacto" style="">Contacto</a>
-</nav>
-<div class="flex items-center gap-4">
-<a href="https://wa.me/19545807679" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold scale-95 active:opacity-80 transition-transform text-sm hover:opacity-90 inline-block text-center" style="">
-                Solicitar Cotización
-            </a>
-</div>
-</div>
-</header>
-<!-- Hero Section -->
-<section class="relative overflow-hidden pt-12 pb-24 md:pt-24 md:pb-32 bg-surface-bright">
-<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="z-10">
-<span class="inline-block px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed text-sm font-bold rounded-full mb-6 uppercase tracking-wider" style="">Protección y Crecimiento</span>
-<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary leading-tight mb-8" style="">Protegemos lo que más amas, asegurando tu <span class="text-secondary" style="">tranquilidad hoy y siempre.</span></h1>
-<p class="text-body-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed text-lg" style="">
-                Asesoría personalizada en seguros de vida, anualidades e inversiones para asegurar el futuro de tu familia con la experiencia de Jose Luis Zavalaga.
-            </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<a href="https://wa.me/19545807679" target="_blank" rel="noopener noreferrer" class="editorial-gradient text-on-primary px-8 py-4 rounded-xl font-bold text-lg sunken-shadow hover:opacity-95 transition-all inline-block text-center" style="">
-                    Hablar con un Agente
-                </a>
-</div>
-</div>
-<div class="mt-12 flex items-center gap-4 text-sm font-medium text-outline">
-<div class="flex -space-x-3">
-<img alt="Client 1" class="w-10 h-10 rounded-full border-2 border-surface-bright" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR7_vK1BYmcRzVfCWnLSHS7fS-UbnI6tZG8XhITAMIuCVP91fEB5BLAagINC6CYV04FRTXMtA5ok2IED2t9w9RPMKc10DhapFsUSqThgqaaN7RmSm46tOq88aleA74RJFznsxMj_NDLhRnGVqHfBJT-70JOuf7XqJ0lRzmPnLsvrgEWlZ8jqvMfy_sJW2eFC312gjEAkv5FbH0cD2KvcDCtXECZSel8k5QprvHT2Tl8RUp16fWrw3GmSLHUSHSdwK2e0sydx09NXFM" style=""/>
-<img alt="Client 2" class="w-10 h-10 rounded-full border-2 border-surface-bright" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8hqAXd8Sg-w8BbVgxnTuCTRV7e4BOyOGp2V7h3QNCMv4WJjLzk5zpu1-Hc3KIvi2lnH7myvyMxzSvXpifMfun7cDHVMz2Ph81ZNxeBR3zzVhyk3iKFQlqY9AtnFOeRPiTLPTMTEsNbBd2V2f1yajkfkK6OUM-wzsygY_ydOxNJI_2jcQyKFgcM0TgO80PeIOiSQpZPz0klBHs_VtOrpoASuvRw478Jv2QDq0U3OalUlho7Taykb9KdJRwynGmRsNL-bxzHbCfzdRa" style=""/>
-<img alt="Client 3 - Older woman smiling" class="w-10 h-10 rounded-full border-2 border-surface-bright" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVpahM0zaRdb7RiaGsmDq6WVhvTSVKKw9LxOoPq-KtgRj3J7EpQmZh6vWvUfcbFIb6I2nb-r8ScsvUuqJW5bY3BlXnbcuru0N6WjvxwUoWSy035a9iYtKkhBiQG6y5wwVPL-SfCjiTZ2A2IRre4kTWzF0tIn7h_J3h3j1PQ03tuA2W1ucD1xw12uBXwQRti3uSE3o11XFV8OihyiKesVfxAJdG2sD1t4Ktynpd--W_QKytrHJ8XeJAA7BFc3NAU67Gy65QEuq9rWuu" style=""/>
-</div>
-<span class="" style="">Más de 100 familias protegidas en Florida</span>
-</div>
-</div>
-<div class="relative lg:h-[600px] flex items-center justify-center">
-<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-fixed/30 rounded-full blur-3xl"></div>
-<div class="absolute -bottom-10 -left-10 w-72 h-72 bg-primary-fixed/20 rounded-full blur-3xl"></div>
-<img alt="Insurance Consultation" class="rounded-3xl object-cover w-full h-[500px] sunken-shadow z-10 object-center" src="images/jose_luis_client.jpg" style=""/>
-<!-- Floating Info Card -->
-<div class="absolute bottom-10 -left-6 bg-white/90 backdrop-blur-md p-6 rounded-2xl sunken-shadow z-20 hidden md:block">
-<div class="flex items-center gap-4 mb-2">
-<div class="p-2 bg-secondary/10 rounded-lg text-secondary">
-<span class="material-symbols-outlined" style="">verified</span>
-</div>
-<span class="font-bold text-primary" style="">Agente Licenciado</span>
-</div>
-<p class="text-xs text-on-surface-variant" style="">Registrado en el estado de Florida</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Carriers Section (Logos) -->
-<section class="py-16 bg-surface-container-low overflow-hidden">
-<div class="max-w-7xl mx-auto px-6">
-<p class="text-center text-sm font-bold text-outline uppercase tracking-widest mb-10" style="">Trabajamos con las mejores compañías</p>
-<div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 transition-all duration-500">
-<img alt="Ethos Life Insurance" class="h-16 w-48 object-contain" src="images/media__1777318532056.png" style=""/>
-<img alt="National Life Group" class="h-16 w-48 object-contain" src="images/media__1777318544047.png" style=""/>
-<img alt="F&amp;G Annuities &amp; Life" class="h-16 w-48 object-contain" src="images/media__1777318561363.png" style=""/>
-<img alt="Mutual of Omaha" class="h-16 w-48 object-contain" src="images/media__1777318586766.png" style=""/>
-</div>
-</div>
-</section>
-<!-- Core Services -->
-<section class="py-24 bg-surface">
-<div class="max-w-7xl mx-auto px-6">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-<div class="max-w-2xl">
-<h2 class="font-headline text-4xl font-extrabold text-primary mb-4 leading-tight" style="">Soluciones financieras diseñadas para tu tranquilidad</h2>
-<p class="text-on-surface-variant text-lg" style="">No solo vendemos pólizas; construimos escudos para tu patrimonio y el bienestar de tus seres queridos.</p>
-</div>
-<a class="text-secondary font-bold hover:underline flex items-center gap-2" href="#" style=""></a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Life Insurance -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl transition-transform hover:-translate-y-2 sunken-shadow">
-<div class="w-14 h-14 bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center rounded-2xl mb-8">
-<span class="material-symbols-outlined text-3xl" style="">family_restroom</span>
-</div>
-<h3 class="font-headline text-2xl font-bold text-primary mb-4" style="">Seguro de Vida</h3>
-<p class="text-on-surface-variant leading-relaxed mb-8" style="">Protege el futuro de quienes más amas. Coberturas flexibles que se adaptan a tu presupuesto y necesidades reales.</p>
-<ul class="space-y-3 text-sm font-medium text-on-surface mb-8">
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-sm" style='font-variation-settings: "FILL" 1;'>check_circle</span> Término y Permanente</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-sm" style='font-variation-settings: "FILL" 1;'>check_circle</span> Beneficios en Vida</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-sm" style='font-variation-settings: "FILL" 1;'>check_circle</span>Gastos Finales</li>
-</ul>
-<button class="text-primary font-bold hover:text-secondary transition-colors inline-flex items-center gap-2" style="">Más información <span class="material-symbols-outlined text-sm" style="">chevron_right</span></button>
-</div>
-<!-- Annuities -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl transition-transform hover:-translate-y-2 sunken-shadow">
-<div class="w-14 h-14 bg-primary-fixed text-on-primary-fixed flex items-center justify-center rounded-2xl mb-8">
-<span class="material-symbols-outlined text-3xl" style="">account_balance_wallet</span>
-</div>
-<h3 class="font-headline text-2xl font-bold text-primary mb-4" style="">Anualidades</h3>
-<p class="text-on-surface-variant leading-relaxed mb-8" style="">Asegura un ingreso garantizado para tu retiro. Transforma tus ahorros en un flujo constante de dinero para toda la vida.</p>
-<ul class="space-y-3 text-sm font-medium text-on-surface mb-8">
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-sm" style='font-variation-settings: "FILL" 1;'>check_circle</span> Crecimiento con Impuestos Diferidos</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-sm" style='font-variation-settings: "FILL" 1;'>check_circle</span> Protección contra Pérdidas</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-sm" style='font-variation-settings: "FILL" 1;'>check_circle</span> Ingreso Vitalicio</li>
-</ul>
-<button class="text-primary font-bold hover:text-secondary transition-colors inline-flex items-center gap-2" style="">Más información <span class="material-symbols-outlined text-sm" style="">chevron_right</span></button>
-</div>
-<!-- Investments -->
-<div class="bg-surface-container-lowest p-8 rounded-3xl transition-transform hover:-translate-y-2 sunken-shadow border-2 border-secondary/10">
-<div class="w-14 h-14 bg-secondary text-on-primary flex items-center justify-center rounded-2xl mb-8">
-<span class="material-symbols-outlined text-3xl" style="">show_chart</span>
-</div>
-<h3 class="font-headline text-2xl font-bold text-primary mb-4" style="">IUL</h3>
-<p class="text-on-surface-variant leading-relaxed mb-8" style="">Es una póliza de seguro de vida permanente que combina la protección financiera para tu familia con una herramienta para acumular ahorros a largo plazo.</p>
-<ul class="space-y-3 text-sm font-medium text-on-surface mb-8">
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-sm" style='font-variation-settings: "FILL" 1;'>check_circle</span>0% Riesgos de perdida</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-sm" style='font-variation-settings: "FILL" 1;'>check_circle</span>Libre de Impuesto</li>
-<li class="flex items-center gap-2" style=""><span class="material-symbols-outlined text-secondary text-sm" style='font-variation-settings: "FILL" 1;'>check_circle</span>Ganancias con interes compuesto</li>
-</ul>
-<button class="text-primary font-bold hover:text-secondary transition-colors inline-flex items-center gap-2" style="">Más información <span class="material-symbols-outlined text-sm" style="">chevron_right</span></button>
-</div>
-</div>
-</div>
-</section>
-<!-- Personal Section: Jose Luis Zavalaga -->
-<section id="nosotros" class="py-24 bg-surface-container-low overflow-hidden">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-<div class="relative order-2 lg:order-1">
-<div class="aspect-[4/5] rounded-[2rem] overflow-hidden relative sunken-shadow">
-<img alt="Jose Luis Zavalaga" class="w-full h-full object-cover object-top" src="images/jose_luis_portrait.jpg" style=""/>
-</div>
-<!-- Badge -->
-<div class="absolute -bottom-8 -right-8 bg-white p-8 rounded-3xl sunken-shadow border-t-4 border-secondary max-w-xs">
-<p class="font-headline text-xl font-extrabold text-primary mb-2" style="">Jose Luis Zavalaga</p>
-<p class="text-sm font-bold text-secondary uppercase tracking-widest mb-4" style="">Licensed Agent</p>
-<p class="text-xs text-on-surface-variant leading-relaxed italic" style="">"Mi compromiso es brindarte la claridad y honestidad que tu patrimonio merece."</p>
-</div>
-</div>
-<div class="order-1 lg:order-2">
-<h2 class="font-headline text-4xl font-extrabold text-primary mb-8 leading-tight" style="">Tu seguridad es personal para nosotros</h2>
-<p class="text-lg text-on-surface-variant mb-6 leading-relaxed" style="">Con años de experiencia en el mercado de Florida, Jose Luis Zavalaga ha ayudado a cientos de individuos y empresarios a navegar la complejidad del sistema financiero y de seguros.</p>
-<p class="text-lg text-on-surface-variant mb-10 leading-relaxed" style="">Entendemos que cada familia es única. Por eso, nuestro enfoque comienza escuchando tus metas, miedos y aspiraciones antes de recomendar cualquier producto.</p>
-<div class="grid grid-cols-2 gap-8 mb-10">
-<div>
-<p class="text-4xl font-extrabold text-primary" style="">5+</p>
-<p class="text-sm font-medium text-outline" style="">Años de experiencia</p>
-</div>
-<div>
-<p class="text-4xl font-extrabold text-primary" style="">100%</p>
-<p class="text-sm font-medium text-outline" style="">Atención en español</p>
-</div>
-</div>
-<div class="flex flex-col gap-4">
-<div class="flex items-center gap-4 p-4 bg-white rounded-2xl sunken-shadow">
-<span class="material-symbols-outlined text-secondary" style='font-variation-settings: "FILL" 1;'>phone_in_talk</span>
-<div>
-<p class="text-xs font-bold text-outline uppercase" style="">Llámanos hoy</p>
-<p class="text-lg font-bold text-primary" style="">+1 (954) 580-7679</p>
-</div>
-</div>
-<div class="flex items-center gap-4 p-4 bg-white rounded-2xl sunken-shadow">
-<span class="material-symbols-outlined text-secondary" style='font-variation-settings: "FILL" 1;'>mail</span>
-<div>
-<p class="text-xs font-bold text-outline uppercase" style="">Correo Electrónico</p>
-<p class="text-lg font-bold text-primary" style="">info@zhflorida.com</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Why Us (Lo que nos diferencia) - Bento Grid -->
-<section class="py-24 bg-surface-bright">
-<div class="max-w-7xl mx-auto px-6">
-<h2 class="font-headline text-4xl font-extrabold text-primary text-center mb-16" style="">Lo que nos diferencia</h2>
-<div class="grid grid-cols-1 md:grid-cols-6 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
-<div class="md:col-span-3 md:row-span-2 bg-primary rounded-[2.5rem] p-10 text-on-primary relative overflow-hidden flex flex-col justify-end">
-<img alt="Consultation" class="absolute inset-0 w-full h-full opacity-100 object-cover object-center" src="images/jose_luis_desk.jpg" style=""/>
-<div class="relative z-10 bg-gradient-to-t from-primary/80 via-primary/40 to-transparent p-6 -m-6 rounded-b-[2.5rem]">
-<h3 class="text-3xl font-bold mb-4" style="">Asesoría Ética</h3>
-<p class="text-on-primary-container text-lg leading-relaxed" style="">No trabajamos para las aseguradoras, trabajamos para ti. Buscamos la mejor opción costo-beneficio del mercado sin conflictos de interés.</p>
-</div>
-</div>
-<div class="md:col-span-3 bg-secondary-fixed text-on-secondary-fixed rounded-[2.5rem] p-10 flex flex-col justify-center">
-<h3 class="text-2xl font-bold mb-4" style="">Proceso 100% Digital</h3>
-<p class="text-on-secondary-fixed-variant leading-relaxed" style="">Firma y gestiona tus pólizas desde la comodidad de tu casa con nuestras herramientas de firma electrónica seguras.</p>
-</div>
-<div class="md:col-span-3 bg-surface-container-highest rounded-[2.5rem] p-10 flex flex-col justify-center">
-<h3 class="text-2xl font-bold mb-4 text-primary" style="">Soporte Continuo</h3>
-<p class="text-on-surface-variant leading-relaxed" style="">Nuestra relación no termina con la firma. Estamos contigo para reclamos, ajustes y actualizaciones de vida.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials -->
-<section class="py-24 bg-surface-container-low overflow-hidden">
-<div class="max-w-7xl mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="font-headline text-4xl font-extrabold text-primary mb-4" style="">Lo que dicen nuestros clientes</h2>
-<div class="flex justify-center gap-1">
-<span class="material-symbols-outlined text-secondary" style='font-variation-settings: "FILL" 1;'>star</span>
-<span class="material-symbols-outlined text-secondary" style='font-variation-settings: "FILL" 1;'>star</span>
-<span class="material-symbols-outlined text-secondary" style='font-variation-settings: "FILL" 1;'>star</span>
-<span class="material-symbols-outlined text-secondary" style='font-variation-settings: "FILL" 1;'>star</span>
-<span class="material-symbols-outlined text-secondary" style='font-variation-settings: "FILL" 1;'>star</span>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="bg-white p-10 rounded-3xl sunken-shadow relative">
-<p class="text-on-surface-variant mb-8 italic leading-relaxed" style="">"Gracias a José Luis y su equipo, ahora me siento seguro del futuro financiero de mi familia. Explicaron todo con mucha paciencia y consiguieron la mejor póliza para nosotros."</p>
-<div class="flex items-center gap-4">
-<img alt="Ricardo Valenzuela" class="w-12 h-12 rounded-full object-cover" src="images/media__1777317878172.jpg" style=""/>
-<div>
-<p class="font-bold text-primary" style="">Ricardo Valenzuela</p>
-<p class="text-xs text-outline uppercase font-bold" style="">Miami, FL</p>
-</div>
-</div>
-</div>
-<div class="bg-white p-10 rounded-3xl sunken-shadow relative">
-<p class="text-on-surface-variant mb-8 italic leading-relaxed" style="">"La compra de mi seguro de vida fue increíblemente fácil. Recomiendo a Z&amp;H Florida Group a cualquier familia que quiera tranquilidad."</p>
-<div class="flex items-center gap-4">
-<img alt="Alan Rodriguez" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbDcLaJpyjDcNhVO0BV2VuJlA6QiYxwvx19p2ogzjN5AK7b_ahhKt1gB8f695SDiBrB8tCyGMIBZxs0xO409XChtz0CO5z8C3QzpKyQUKnJ0q0LJjJfWBD7hpJXvAxmU0m8w-0lJ5sg33Q2_oapMbGNaVWXYjuRQ3l5ppl3HhHPQDTotlyjk-HfO9yiGML4n2BgKIyc6u2BmPR485AU1u8Tsmz6YthkbM7_g9WOuKS5idNLs4QZkPM8Rg4SZ8y01fDHq4KR3GhLzOP" style=""/>
-<div>
-<p class="font-bold text-primary" style="">Alan Rodriguez</p>
-<p class="text-xs text-outline uppercase font-bold" style="">Orlando, FL</p>
-</div>
-</div>
-</div>
-<div class="bg-white p-10 rounded-3xl sunken-shadow relative">
-<p class="text-on-surface-variant mb-8 italic leading-relaxed" style="">"Su asesoría en anualidades cambió mi perspectiva sobre el ahorro. Ahora tengo un plan claro para mi futuro y el de mis hijos."</p>
-<div class="flex items-center gap-4">
-<img alt="Maria Silva" class="w-12 h-12 rounded-full object-cover" src="images/media__1777318096673.jpg" style=""/>
-<div>
-<p class="font-bold text-primary" style="">Maria Silva</p>
-<p class="text-xs text-outline uppercase font-bold" style="">Tampa, FL</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Final CTA -->
-<section id="contacto" class="py-24 bg-primary relative overflow-hidden">
-<div class="absolute inset-0 opacity-10">
-<div class="absolute top-0 left-0 w-full h-full editorial-gradient"></div>
-</div>
-<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
-<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-white mb-8" style="">¿Listo para asegurar lo que más importa?</h2>
-<p class="text-on-primary-container text-xl mb-12 leading-relaxed" style="">Agenda una consulta gratuita de 15 minutos hoy mismo y descubre cómo podemos ayudarte a alcanzar tus metas financieras.</p>
-<div class="flex flex-col sm:flex-row justify-center gap-4">
-<a href="https://wa.me/19545807679" target="_blank" rel="noopener noreferrer" class="bg-secondary text-white px-10 py-5 rounded-xl font-bold text-xl sunken-shadow hover:bg-secondary/90 transition-all inline-block text-center" style="">
-                Solicitar mi Cotización
-            </a>
+<body>
 
+<nav class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img src="images/logo.jpg" alt="Z&amp;H Florida Group" onerror="this.style.display='none'">
+      <span>
+        <span class="bmark serif">Z&amp;H Florida Group</span><br>
+        <span class="bsub">Davie, Florida</span>
+      </span>
+    </a>
+    <div class="navlinks">
+      <a href="tax-preparation.html" lang-en>Tax Preparation</a><a href="tax-preparation.html" lang-es lang="es">Impuestos</a>
+      <a href="bookkeeping.html" lang-en>Bookkeeping</a><a href="bookkeeping.html" lang-es lang="es">Contabilidad</a>
+      <a href="business-formation.html" lang-en>Start a Business</a><a href="business-formation.html" lang-es lang="es">Abrir un Negocio</a>
+      <a href="business-taxes.html" lang-en>Business Taxes</a><a href="business-taxes.html" lang-es lang="es">Impuestos de Negocio</a>
+      <a href="#pricing" lang-en>Pricing</a><a href="#pricing" lang-es lang="es">Precios</a>
+      <a href="about.html" lang-en>About</a><a href="about.html" lang-es lang="es">Nosotros</a>
+    </div>
+    <div class="navright">
+      <div class="lang">
+        <button type="button" id="btn-en" aria-pressed="true">EN</button>
+        <button type="button" id="btn-es" aria-pressed="false">ES</button>
+      </div>
+      <a class="navbook" href="book.html" lang-en>Book</a><a class="navbook" href="book.html" lang-es lang="es">Reservar</a>
+      <a class="navtel" href="tel:+19542648555">(954) 264-8555</a>
+    </div>
+  </div>
+</nav>
+
+<div id="top" class="hero">
+  <div class="wrap">
+      <div class="hero-text">
+        <p class="eyebrow" lang-en>Davie · Serving all of Broward</p>
+        <p class="eyebrow" lang-es lang="es">Davie · Servimos todo Broward</p>
+
+        <h1 class="serif" lang-en>Your tax office shouldn't <span class="gold">disappear in May.</span></h1>
+        <h1 class="serif" lang-es lang="es">Tu oficina de impuestos no debería <span class="gold">desaparecer en mayo.</span></h1>
+
+        <p class="lede" lang-en>Tax preparation, year-round bookkeeping, and business formation for families,
+          self-employed workers, and small businesses across Broward County. The same two people, every year.</p>
+        <p class="lede" lang-es lang="es">Preparación de impuestos, contabilidad todo el año y apertura de negocios para
+          familias, trabajadores por cuenta propia y pequeños negocios en Broward. Las mismas dos personas, cada año.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-gold" href="book.html" lang-en>Book an appointment</a>
+      <a class="btn btn-gold" href="book.html" lang-es lang="es">Reservar una cita</a>
+      <a class="btn btn-line" href="sms:+19542648555?&body=Hi%20-%20I'd%20like%20a%20quote%20for%20my%20taxes." lang-en>Text us instead</a>
+      <a class="btn btn-line" href="tel:+19542648555" lang-en>Call (954) 264-8555</a>
+      <a class="btn btn-line" href="sms:+19542648555?&body=Hola%20-%20quiero%20cotizar%20mis%20impuestos." lang-es lang="es">Mejor escríbenos</a>
+      <a class="btn btn-line" href="tel:+19542648555" lang-es lang="es">Llama al (954) 264-8555</a>
+          <a class="btn btn-line" href="#services" lang-en>What we do</a>
+          <a class="btn btn-line" href="#services" lang-es lang="es">Nuestros servicios</a>
+        </div>
+
+        <div class="trustline">
+          <span lang-en>Open all twelve months</span><span lang-es lang="es">Abierto los doce meses</span>
+          <span lang-en>English &amp; Spanish</span><span lang-es lang="es">Inglés y español</span>
+          <span lang-en>Saturdays by appointment</span><span lang-es lang="es">Sábados con cita previa</span>
+        </div>
+      </div>
+  </div>
+
+  <div class="hero-band">
+    <img src="images/team-sign.jpg" width="1800" height="832" fetchpriority="high" decoding="async" alt="Sonia Rosa and José Luis Zavalaga outside the Z&amp;H Florida Group office in Davie" onerror="this.style.display='none'">
+  </div>
+
+  <div class="wrap">
+    <p class="band-cap">
+      <span class="pin">Sonia Rosa &amp; José Luis Zavalaga</span>
+      <span lang-en>4800 SW 64th Ave, Suite 103 · Davie, Florida</span>
+      <span lang-es lang="es">4800 SW 64th Ave, Suite 103 · Davie, Florida</span>
+    </p>
+  </div>
 </div>
-</div>
+
+<section class="people">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="sec-eyebrow" lang-en>Who you'll actually work with</p>
+      <p class="sec-eyebrow" lang-es lang="es">Con quién vas a trabajar</p>
+      <h2 class="serif" lang-en>Two people. Not a rotating desk.</h2>
+      <h2 class="serif" lang-es lang="es">Dos personas. No un escritorio rotativo.</h2>
+      <p class="sec-lede" lang-en>You'll see the same faces every year — people who remember what happened
+        last season, and why.</p>
+      <p class="sec-lede" lang-es lang="es">Vas a ver las mismas caras cada año — personas que recuerdan qué pasó la
+        temporada pasada, y por qué.</p>
+    </div>
+
+    <div class="ppl">
+      <div class="person rv">
+        <div class="ph"><img src="images/sonia-desk.jpg" width="1800" height="832" loading="lazy" decoding="async" alt="Sonia Rosa at her desk at Z&amp;H Florida Group" onerror="this.style.display='none'"></div>
+        <div class="bd">
+          <p class="nm serif">Sonia Rosa</p>
+          <p class="rl" lang-en>Tax Preparation &amp; Bookkeeping</p>
+          <p class="rl" lang-es lang="es">Impuestos y Contabilidad</p>
+          <p lang-en>Sonia Rosa spent years preparing returns under an established accountant before opening
+            Z&amp;H. She holds an active IRS Preparer Tax Identification Number and works with clients in
+            English and Spanish — from a first W-2 to a set of books nobody has touched in a year.</p>
+          <p lang-es lang="es">Sonia Rosa preparó declaraciones durante años bajo un contador establecido antes de abrir
+            Z&amp;H. Tiene un Número de Identificación de Preparador (PTIN) activo del IRS y atiende en
+            inglés y español — desde un primer W-2 hasta libros que llevan un año sin tocarse.</p>
+        </div>
+      </div>
+
+      <div class="person rv">
+        <div class="ph"><img src="images/jose-desk.jpg" width="1800" height="832" loading="lazy" decoding="async" alt="José Luis Zavalaga at his desk at Z&amp;H Florida Group" onerror="this.style.display='none'"></div>
+        <div class="bd">
+          <p class="nm serif">José Luis Zavalaga</p>
+          <p class="rl" lang-en>Tax Preparation &amp; Bookkeeping</p>
+          <p class="rl" lang-es lang="es">Impuestos y Contabilidad</p>
+          <p lang-en>José has worked with South Florida families since 2016 and runs Z&amp;H alongside
+            Sonia. He prepares returns and handles bookkeeping the same as she does, in English and
+            Spanish — so whichever of them picks up the phone, you're talking to someone who can
+            actually help you.</p>
+          <p lang-es lang="es">José trabaja con familias del sur de la Florida desde 2016 y dirige Z&amp;H junto a
+            Sonia. Prepara declaraciones y lleva contabilidad igual que ella, en inglés y español — así
+            que quien conteste el teléfono, estás hablando con alguien que de verdad te puede ayudar.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wide-photo rv">
+      <img src="images/team-laptop.jpg" width="1800" height="832" loading="lazy" decoding="async" alt="Sonia Rosa and José reviewing a return together at Z&amp;H Florida Group" onerror="this.parentElement.style.display='none'">
+    </div>
+  </div>
 </section>
-<!-- Footer -->
-<footer class="bg-slate-50 border-t-0">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 w-full px-8 py-16 max-w-7xl mx-auto">
-<div class="col-span-1 md:col-span-1">
-<div class="text-lg font-bold text-primary mb-6 font-headline">Z&amp;H Florida Group</div>
-<p class="text-slate-500 text-sm leading-relaxed mb-6">
-    Jose Luis Zavalaga - Licensed Insurance Agent. Brindando seguridad y asesoría financiera experta en el estado de Florida.
-</p>
-<div class="flex gap-3">
-    <a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-highest text-primary hover:bg-primary hover:text-white transition-all" href="https://www.facebook.com/people/ZH-Florida-Insurance/61584323117523/?sk=followers" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-    </a>
-    <a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-highest text-primary hover:bg-primary hover:text-white transition-all" href="https://www.instagram.com/zhfloridagroup/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-    </a>
-    <a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-highest text-primary hover:bg-primary hover:text-white transition-all" href="https://www.linkedin.com/in/jose-zavalaga-38326a250" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-    </a>
+
+<section style="padding-bottom:0">
+  <div class="wrap">
+    <div class="forwho rv">
+      <h3 lang-en>You're in the right place if…</h3>
+      <h3 lang-es lang="es">Estás en el lugar correcto si…</h3>
+      <ul>
+        <li lang-en>You're 1099 or self-employed</li><li lang-es lang="es">Eres 1099 o trabajas por cuenta propia</li>
+        <li lang-en>It's your first year with real income</li><li lang-es lang="es">Es tu primer año con ingresos de verdad</li>
+        <li lang-en>You haven't filed in a year or more</li><li lang-es lang="es">Llevas uno o más años sin declarar</li>
+        <li lang-en>A letter came and you don't understand it</li><li lang-es lang="es">Llegó una carta y no la entiendes</li>
+        <li lang-en>You're starting a business and don't know where to begin</li><li lang-es lang="es">Vas a abrir un negocio y no sabes por dónde empezar</li>
+        <li lang-en>Your books haven't been touched in months</li><li lang-es lang="es">Tus libros llevan meses sin tocarse</li>
+        <li lang-en>You need an ITIN</li><li lang-es lang="es">Necesitas un ITIN</li>
+        <li lang-en>You'd rather do all of it in Spanish</li><li lang-es lang="es">Prefieres hacerlo todo en español</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="sec-eyebrow" lang-en>What we do</p>
+      <p class="sec-eyebrow" lang-es lang="es">Lo que hacemos</p>
+      <h2 class="serif" lang-en>Four doors. One office.</h2>
+      <h2 class="serif" lang-es lang="es">Cuatro puertas. Una oficina.</h2>
+      <p class="sec-lede" lang-en>Whether you're filing a first return, starting a company, or catching up on
+        books you haven't touched in a year — it's the same two people, and they already know your file.</p>
+      <p class="sec-lede" lang-es lang="es">Ya sea tu primera declaración, abrir una compañía o poner al día libros que
+        llevan un año sin tocarse — son las mismas dos personas, y ya conocen tu caso.</p>
+    </div>
+
+    <div class="doors">
+      <div class="door rv">
+        <p class="num">01</p>
+        <h3 lang-en>Tax Preparation</h3><h3 lang-es lang="es">Preparación de Impuestos</h3>
+        <p lang-en>Individual and family returns, done properly and explained in plain language.</p>
+        <p lang-es lang="es">Declaraciones individuales y familiares, hechas bien y explicadas en palabras simples.</p>
+        <ul>
+          <li lang-en>Individual &amp; family returns</li><li lang-es lang="es">Declaraciones individuales</li>
+          <li lang-en>Self-employed &amp; 1099</li><li lang-es lang="es">Trabajadores 1099</li>
+          <li lang-en>Prior-year &amp; unfiled returns</li><li lang-es lang="es">Años anteriores y no presentadas</li>
+          <li lang-en>ITIN applications</li><li lang-es lang="es">Solicitudes de ITIN</li>
+        </ul>
+        <a class="go" href="tax-preparation.html" lang-en>See tax services →</a>
+        <a class="go" href="tax-preparation.html" lang-es lang="es">Ver servicios →</a>
+      </div>
+
+      <div class="door rv">
+        <p class="num">02</p>
+        <h3 lang-en>Bookkeeping</h3><h3 lang-es lang="es">Contabilidad</h3>
+        <p lang-en>Month by month, all year — so April is a formality instead of a panic.</p>
+        <p lang-es lang="es">Mes a mes, todo el año — para que abril sea un trámite y no un susto.</p>
+        <ul>
+          <li lang-en>Monthly bookkeeping</li><li lang-es lang="es">Contabilidad mensual</li>
+          <li lang-en>Books cleaned up &amp; caught up</li><li lang-es lang="es">Libros ordenados y al día</li>
+          <li lang-en>Financial statements</li><li lang-es lang="es">Estados financieros</li>
+          <li lang-en>Quarterly estimated taxes</li><li lang-es lang="es">Impuestos estimados</li>
+        </ul>
+        <a class="go" href="bookkeeping.html" lang-en>See bookkeeping →</a>
+        <a class="go" href="bookkeeping.html" lang-es lang="es">Ver contabilidad →</a>
+      </div>
+
+      <div class="door rv">
+        <p class="num">03</p>
+        <h3 lang-en>Start a Business</h3><h3 lang-es lang="es">Abrir un Negocio</h3>
+        <p lang-en>From an idea to a registered company with a tax ID — in one place.</p>
+        <p lang-es lang="es">De una idea a una compañía registrada con número fiscal — en un solo lugar.</p>
+        <ul>
+          <li lang-en>LLC &amp; corporation setup</li><li lang-es lang="es">Apertura de LLC y corporaciones</li>
+          <li lang-en>EIN / federal tax ID</li><li lang-es lang="es">Número EIN federal</li>
+          <li lang-en>Registered agent</li><li lang-es lang="es">Agente registrado</li>
+          <li lang-en>Payroll partner referral</li><li lang-es lang="es">Referido para nómina</li>
+        </ul>
+        <a class="go" href="business-formation.html" lang-en>Start your business →</a>
+        <a class="go" href="business-formation.html" lang-es lang="es">Abre tu negocio →</a>
+      </div>
+
+      <div class="door rv">
+        <p class="num">04</p>
+        <h3 lang-en>Business Taxes</h3><h3 lang-es lang="es">Impuestos de Negocio</h3>
+        <p lang-en>Returns for companies that already exist, filed on time and structured sensibly.</p>
+        <p lang-es lang="es">Declaraciones para compañías ya existentes, a tiempo y bien estructuradas.</p>
+        <ul>
+          <li lang-en>Partnership &amp; LLC returns</li><li lang-es lang="es">Declaraciones de LLC y sociedad</li>
+          <li lang-en>S-Corp returns</li><li lang-es lang="es">Declaraciones S-Corp</li>
+          <li lang-en>Quarterly estimates</li><li lang-es lang="es">Pagos trimestrales</li>
+          <li lang-en>Sales tax filings</li><li lang-es lang="es">Impuesto sobre ventas</li>
+        </ul>
+        <a class="go" href="business-taxes.html" lang-en>See business taxes →</a>
+        <a class="go" href="business-taxes.html" lang-es lang="es">Ver impuestos →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="calendar">
+  <div class="wrap">
+    <div class="cal-head rv">
+      <p class="eyebrow" lang-en>The difference, in one picture</p>
+      <p class="eyebrow" lang-es lang="es">La diferencia, en una imagen</p>
+      <h2 class="serif" lang-en>Most tax offices work four months a year.</h2>
+      <h2 class="serif" lang-es lang="es">La mayoría de las oficinas trabajan cuatro meses al año.</h2>
+      <p lang-en>Then the door closes — and the IRS letter still arrives in August.</p>
+      <p lang-es lang="es">Después cierran — y la carta del IRS igual llega en agosto.</p>
+    </div>
+
+    <div class="cal-row rv">
+      <p class="cal-lbl" lang-en>A seasonal tax shop</p>
+      <p class="cal-lbl" lang-es lang="es">Una oficina de temporada</p>
+      <div class="months" id="cal-them"></div>
+      <p class="cal-cap" lang-en>Open January to April. <b>Gone when you actually need them.</b></p>
+      <p class="cal-cap" lang-es lang="es">Abren de enero a abril. <b>No están cuando de verdad los necesitas.</b></p>
+    </div>
+
+    <div class="cal-row us rv">
+      <p class="cal-lbl">Z&amp;H Florida Group</p>
+      <div class="months" id="cal-us"></div>
+      <p class="cal-cap" lang-en><b>All twelve.</b> Your books in October, your letter in August, your questions in June.</p>
+      <p class="cal-cap" lang-es lang="es"><b>Los doce.</b> Tus libros en octubre, tu carta en agosto, tus preguntas en junio.</p>
+    </div>
+  </div>
 </div>
-</div>
-<div>
-<h4 class="font-bold text-primary mb-6 uppercase text-xs tracking-widest">Servicios</h4>
-<ul class="space-y-4 text-sm font-medium">
-    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="seguro_final.html">Seguros de Vida</a></li>
-    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="anualidades_final.html">Anualidades</a></li>
-    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="inversiones_final.html">IUL</a></li>
-    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="seguro_final.html#gastos-finales">Gastos Finales</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-primary mb-6 uppercase text-xs tracking-widest">Compañía</h4>
-<ul class="space-y-4 text-sm font-medium">
-    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="index.html#nosotros">Sobre Nosotros</a></li>
-    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="index.html#contacto">Contacto</a></li>
-    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="preguntas_frecuentes_final.html">Preguntas Frecuentes</a></li>
-    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="privacidad_final.html">Aviso de Privacidad</a></li>
-    <li><a class="text-slate-500 hover:text-blue-600 underline-offset-4 hover:underline transition-colors" href="terminos_final.html">Términos de Servicio</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-primary mb-6 uppercase text-xs tracking-widest">Contacto</h4>
-<ul class="space-y-4 text-slate-500 text-sm">
-    <li class="flex items-start gap-3">
-        <span class="material-symbols-outlined text-secondary">location_on</span>
-        <span>Davie, FL - Servimos a todo el estado</span>
-    </li>
-    <li class="flex items-start gap-3">
-        <span class="material-symbols-outlined text-secondary">mail</span>
-        <span>info@zhflorida.com</span>
-    </li>
-    <li class="flex items-start gap-3">
-        <span class="material-symbols-outlined text-secondary">call</span>
-        <span>+1 (954) 580-7679</span>
-    </li>
-</ul>
-</div>
-</div>
-<div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200">
-<p class="text-center text-slate-500 text-sm">
-    © 2026 Z&amp;H Florida Group. Jose Luis Zavalaga - Licensed Insurance Agent. Todos los derechos reservados.
-</p>
-</div>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="sec-eyebrow" lang-en>Why people switch</p>
+      <p class="sec-eyebrow" lang-es lang="es">Por qué se cambian</p>
+      <h2 class="serif" lang-en>The difference isn't the return. It's everything around it.</h2>
+      <h2 class="serif" lang-es lang="es">La diferencia no es la declaración. Es todo lo demás.</h2>
+    </div>
+
+    <div class="cmp rv">
+      <div class="cmp-head">
+        <div lang-en>The strip-mall shop</div><div lang-es lang="es">La oficina del centro comercial</div>
+        <div lang-en>Z&amp;H Florida Group</div><div lang-es lang="es">Z&amp;H Florida Group</div>
+      </div>
+      <div class="cmp-row">
+        <div lang-en>Opens in January, gone by May</div><div lang-es lang="es">Abre en enero, cierra en mayo</div>
+        <div lang-en>Open all twelve months</div><div lang-es lang="es">Abierto los doce meses</div>
+      </div>
+      <div class="cmp-row">
+        <div lang-en>A different preparer every year</div><div lang-es lang="es">Un preparador diferente cada año</div>
+        <div lang-en>The same two people, every time</div><div lang-es lang="es">Las mismas dos personas, siempre</div>
+      </div>
+      <div class="cmp-row">
+        <div lang-en>Tax return only</div><div lang-es lang="es">Solo la declaración</div>
+        <div lang-en>Taxes, books, and your company setup</div><div lang-es lang="es">Impuestos, libros y tu compañía</div>
+      </div>
+      <div class="cmp-row">
+        <div lang-en>English only, or an interpreter</div><div lang-es lang="es">Solo inglés, o un intérprete</div>
+        <div lang-en>Fully bilingual, start to finish</div><div lang-es lang="es">Bilingüe de principio a fin</div>
+      </div>
+      <div class="cmp-row">
+        <div lang-en>Weekdays only — take a day off work</div><div lang-es lang="es">Solo entre semana — pide el día libre</div>
+        <div lang-en>Saturdays 10–2 by appointment</div><div lang-es lang="es">Sábados 10–2 con cita previa</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="sec-eyebrow" lang-en>What it costs</p>
+      <p class="sec-eyebrow" lang-es lang="es">Cuánto cuesta</p>
+      <h2 class="serif" lang-en>Real numbers, before you walk in.</h2>
+      <h2 class="serif" lang-es lang="es">Números reales, antes de venir.</h2>
+      <p class="sec-lede" lang-en>Most tax offices won't tell you a price until you're sitting in the chair.
+        We think that's a bad way to treat people. These are real ranges, not teasers.</p>
+      <p class="sec-lede" lang-es lang="es">La mayoría de las oficinas no te dicen un precio hasta que estás sentado en
+        la silla. Nos parece una mala forma de tratar a la gente. Estos son rangos reales, no anzuelos.</p>
+      <p class="sec-lede" style="margin-top:14px" lang-en>We're two people in one office in Davie — no franchise
+        fee, no seasonal staff, no advertising budget. <b style="color:var(--ink)">That's why these numbers sit
+        below the South Florida average, and it's the only reason.</b></p>
+      <p class="sec-lede" style="margin-top:14px" lang-es lang="es">Somos dos personas en una oficina en Davie — sin
+        franquicia, sin personal temporal, sin presupuesto de publicidad. <b style="color:var(--ink)">Por eso estos
+        números están por debajo del promedio del sur de la Florida, y esa es la única razón.</b></p>
+    </div>
+
+    <div class="pricing">
+      <div class="pr rv" style="border-color:var(--gold-lt);box-shadow:var(--shadow)">
+        <p class="pl"><span style="color:var(--gold)" lang-en>Self-employed · 1099 &nbsp;— MOST COMMON</span><span style="color:var(--gold)" lang-es lang="es">Por cuenta propia · 1099 &nbsp;— EL MÁS COMÚN</span></p>
+        <p class="amt">$275<span class="per">–$425</span></p>
+        <p class="note" lang-en>Schedule C, deductions reviewed, quarterly estimates set up. Most 1099 returns
+          land at $275–$325; the top of the range is multiple businesses or rental income.</p>
+        <p class="note" lang-es lang="es">Anexo C, deducciones revisadas, pagos trimestrales. La mayoría cae entre
+          $275 y $325; lo más alto es para varios negocios o ingresos de renta.</p>
+      </div>
+      <div class="pr rv">
+        <p class="pl" lang-en>Behind a year or more</p><p class="pl" lang-es lang="es">Atrasado uno o más años</p>
+        <p class="amt">$275<span class="per">–$450 / yr</span></p>
+        <p class="note" lang-en>Two years is usually <b>$550–$900</b> total. Quoted in writing after a free
+          15-minute look — before we touch anything.</p>
+        <p class="note" lang-es lang="es">Dos años normalmente son <b>$550–$900</b> en total. Cotizado por escrito
+          después de una revisión gratis de 15 minutos — antes de tocar nada.</p>
+      </div>
+      <div class="pr rv">
+        <p class="pl" lang-en>Monthly bookkeeping</p><p class="pl" lang-es lang="es">Contabilidad mensual</p>
+        <p class="amt">$200<span class="per">–$400/mo</span></p>
+        <p class="note" lang-en>Priced on how many transactions you have. Bookkeeping clients pay less at tax time.</p>
+        <p class="note" lang-es lang="es">Según cuántas transacciones tengas. Los clientes de contabilidad pagan
+          menos en la temporada de impuestos.</p>
+      </div>
+      <div class="pr rv">
+        <p class="pl" lang-en>Individual return · W-2</p><p class="pl" lang-es lang="es">Declaración individual · W-2</p>
+        <p class="amt">$150<span class="per">–$225</span></p>
+        <p class="note" lang-en>$150 is a single W-2 with the standard deduction. Federal and state, filed electronically.</p>
+        <p class="note" lang-es lang="es">$150 es un solo W-2 con la deducción estándar. Federal y estatal, presentada electrónicamente.</p>
+      </div>
+      <div class="pr rv">
+        <p class="pl" lang-en>Open an LLC</p><p class="pl" lang-es lang="es">Abrir una LLC</p>
+        <p class="amt">$350<span class="per"> flat</span></p>
+        <p class="note" lang-en>Our fee is $350 flat. Florida's filing fee goes to the state, not to us. EIN included.</p>
+        <p class="note" lang-es lang="es">Nuestro honorario es $350 fijo. La tarifa de Florida va al estado, no a
+          nosotros. EIN incluido.</p>
+      </div>
+    </div>
+
+    <div class="pricenote rv">
+      <p lang-en><b>Your exact price is confirmed in writing before any work starts.</b> You will never get a
+        bill you didn't agree to first. Not sure which one you are? That's what the free 15 minutes is for —
+        bring nothing, we tell you where you stand, and <b>we don't file anything and we don't report anything
+        to anybody.</b></p>
+      <p lang-es lang="es"><b>Tu precio exacto se confirma por escrito antes de empezar.</b> Nunca recibirás una
+        factura que no aceptaste antes. ¿No sabes cuál eres? Para eso es la revisión gratis de 15 minutos — no
+        traigas nada, te decimos dónde estás parado, y <b>no presentamos nada ni le reportamos nada a nadie.</b></p>
+      <div class="cta-row" style="margin-top:22px">
+        <a class="btn btn-gold" href="book.html" lang-en>Book the free 15-minute look</a>
+        <a class="btn btn-gold" href="book.html" lang-es lang="es">Reservar la revisión gratis de 15 minutos</a>
+        <a class="btn btn-line" href="sms:+19542648555?&body=Hi%20-%20I%27d%20like%20the%20free%2015-minute%20look." lang-en>Or text us</a>
+        <a class="btn btn-line" href="sms:+19542648555?&body=Hola%20-%20quiero%20la%20revisi%C3%B3n%20gratis%20de%2015%20minutos." lang-es lang="es">O escríbenos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2 class="serif rv" lang-en>Can't take a day off work? Come Saturday.</h2>
+    <h2 class="serif rv" lang-es lang="es">¿No puedes faltar al trabajo? Ven un sábado.</h2>
+    <p class="rv" lang-en>We keep Saturday mornings open by appointment, 10 to 2 — so you don't lose a day's
+      pay to get your taxes done. Call and tell us your situation. If we're not the right fit, we'll say so.</p>
+    <p class="rv" lang-es lang="es">Abrimos los sábados con cita previa, de 10 a 2 — para que no pierdas un día de
+      trabajo. Llámanos y cuéntanos tu situación. Si no somos lo que necesitas, te lo diremos.</p>
+    <div class="cta-row rv">
+      <a class="btn btn-gold" href="book.html" lang-en>Book an appointment</a>
+      <a class="btn btn-gold" href="book.html" lang-es lang="es">Reservar una cita</a>
+      <a class="btn btn-line" href="sms:+19542648555?&body=Hi%20-%20I'd%20like%20a%20quote%20for%20my%20taxes." lang-en>Text us instead</a>
+      <a class="btn btn-line" href="tel:+19542648555" lang-en>Call (954) 264-8555</a>
+      <a class="btn btn-line" href="sms:+19542648555?&body=Hola%20-%20quiero%20cotizar%20mis%20impuestos." lang-es lang="es">Mejor escríbenos</a>
+      <a class="btn btn-line" href="tel:+19542648555" lang-es lang="es">Llama al (954) 264-8555</a>
+      <a class="btn btn-line" href="#contact" lang-en>Office &amp; hours</a>
+      <a class="btn btn-line" href="#contact" lang-es lang="es">Oficina y horario</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="sec-eyebrow" lang-en>Come see us</p>
+      <p class="sec-eyebrow" lang-es lang="es">Visítanos</p>
+      <h2 class="serif" lang-en>We're in Davie, and we're open now.</h2>
+      <h2 class="serif" lang-es lang="es">Estamos en Davie, y estamos abiertos ahora.</h2>
+    </div>
+
+    <div class="cstrip">
+      <div class="cbox rv">
+        <p class="lb" lang-en>Call or text</p><p class="lb" lang-es lang="es">Llama o escribe</p>
+        <p class="vl"><a href="tel:+19542648555">(954) 264-8555</a></p>
+        <p class="sm"><a href="sms:+19542648555?&body=Hi%20-%20I'd%20like%20a%20quote%20for%20my%20taxes." class="hl" lang-en>&#128172; Text us &mdash; we answer texts too</a><a href="sms:+19542648555?&body=Hola%20-%20quiero%20cotizar%20mis%20impuestos." class="hl" lang-es lang="es">&#128172; Escríbenos &mdash; también contestamos mensajes</a></p>
+        <p class="sm" lang-en>English and Spanish</p><p class="sm" lang-es lang="es">Inglés y español</p>
+      </div>
+      <div class="cbox rv">
+        <p class="lb" lang-en>Office</p><p class="lb" lang-es lang="es">Oficina</p>
+        <p class="vl">4800 SW 64th Ave<br>Suite 103, Davie, FL 33314</p>
+        <p class="sm" lang-en>In person: Davie · Hollywood · Pembroke Pines · Miramar</p>
+        <p class="sm" lang-es lang="es">En persona: Davie · Hollywood · Pembroke Pines · Miramar</p>
+        <p class="sm"><span class="hl" lang-en>Remote clients anywhere in Florida &amp; Texas</span><span class="hl" lang-es lang="es">Clientes remotos en todo Florida y Texas</span></p>
+      </div>
+      <div class="cbox rv">
+        <p class="lb" lang-en>Hours</p><p class="lb" lang-es lang="es">Horario</p>
+        <p class="vl" lang-en>Mon – Fri · 9 AM – 5 PM</p>
+        <p class="vl" lang-es lang="es">Lun – Vie · 9 AM – 5 PM</p>
+        <p class="sm"><span class="hl" lang-en>Saturdays 10 AM – 2 PM by appointment</span><span class="hl" lang-es lang="es">Sábados 10 AM – 2 PM con cita previa</span></p>
+        <p class="sm" lang-en>Open all twelve months</p><p class="sm" lang-es lang="es">Abierto los doce meses</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="fbrand">
+          <img src="images/logo.jpg" alt="" onerror="this.style.display='none'">
+          <span class="n serif">Z&amp;H Florida Group</span>
+        </div>
+        <p lang-en>Tax preparation, bookkeeping, and business formation. In our Davie office, or remotely
+          across Broward County, or remotely anywhere in Florida and Texas. English and Spanish.</p>
+        <p lang-es lang="es">Impuestos, contabilidad y apertura de negocios. En nuestra oficina en Davie, o de forma
+          remota en todo Florida y Texas. Inglés y español.</p>
+      </div>
+      <div>
+        <h4 lang-en>Services</h4><h4 lang-es lang="es">Servicios</h4>
+        <ul>
+          <li><a href="tax-preparation.html" lang-en>Tax Preparation</a><a href="tax-preparation.html" lang-es lang="es">Preparación de Impuestos</a></li>
+          <li><a href="bookkeeping.html" lang-en>Bookkeeping</a><a href="bookkeeping.html" lang-es lang="es">Contabilidad</a></li>
+          <li><a href="business-formation.html" lang-en>Start a Business</a><a href="business-formation.html" lang-es lang="es">Abrir un Negocio</a></li>
+          <li><a href="business-taxes.html" lang-en>Business Taxes</a><a href="business-taxes.html" lang-es lang="es">Impuestos de Negocio</a></li>
+          <li><a href="about.html" lang-en>About us</a><a href="about.html" lang-es lang="es">Nosotros</a></li>
+          <li><a href="book.html" lang-en><b style="color:var(--gold-br)">Book an appointment</b></a><a href="book.html" lang-es lang="es"><b style="color:var(--gold-br)">Reservar una cita</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 lang-en>Contact</h4><h4 lang-es lang="es">Contacto</h4>
+        <ul>
+          <li><a href="tel:+19542648555">(954) 264-8555</a></li>
+          <li>4800 SW 64th Ave, Ste 103<br>Davie, FL 33314</li>
+          <li lang-en>Mon–Fri 9–5 · Sat 10–2 by appt.</li>
+          <li lang-es lang="es">Lun–Vie 9–5 · Sáb 10–2 con cita</li>
+          <li lang-en>Davie &middot; Hollywood &middot; Pembroke Pines &middot; Miramar</li>
+          <li lang-es lang="es">Davie &middot; Hollywood &middot; Pembroke Pines &middot; Miramar</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="disc" lang-en>Z&amp;H Florida Group provides tax preparation, bookkeeping, and business filing
+      services. Our preparers hold active IRS Preparer Tax Identification Numbers (PTIN). We are not certified
+      public accountants, enrolled agents, or attorneys. We do not provide legal advice and we do not represent
+      taxpayers before the IRS. Business formation
+      services are document preparation and filing services only. Fees depend on the complexity of your return.
+      We do not guarantee any particular refund amount or tax outcome. Information on this site is general and
+      is not tax, legal, or financial advice. © 2026 Z&amp;H Florida Group. &nbsp;·&nbsp; <a href="privacy.html" style="color:#A8A196;text-decoration:underline">Privacy Policy</a></p>
+    <p class="disc" lang-es lang="es">Z&amp;H Florida Group ofrece servicios de preparación de impuestos, contabilidad y
+      trámites de registro de negocios. Nuestros preparadores tienen Números de Identificación de Preparador
+      (PTIN) activos del IRS. No somos contadores públicos certificados (CPA), agentes inscritos (enrolled
+      agents) ni abogados; no brindamos asesoría legal y no representamos a contribuyentes ante el IRS. Los servicios de apertura de negocios son únicamente
+      preparación y presentación de documentos. Los honorarios dependen de la complejidad de su declaración. No
+      garantizamos ningún monto de reembolso ni resultado fiscal. La información de este sitio es general y no
+      constituye asesoría fiscal, legal ni financiera. © 2026 Z&amp;H Florida Group. &nbsp;·&nbsp; <a href="privacy.html" style="color:#A8A196;text-decoration:underline">Privacy Policy</a></p>
+  </div>
 </footer>
 
-</body></html>
+<script src="site.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thanks.html
+Disallow: /privacy.html
+
+Sitemap: https://www.zhfloridagroup.com/sitemap.xml

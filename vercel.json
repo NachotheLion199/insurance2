@@ -1,0 +1,11 @@
+{
+  "redirects": [
+    { "source": "/inicio_final.html", "destination": "/", "permanent": true },
+    { "source": "/seguro_final.html", "destination": "/", "permanent": true },
+    { "source": "/anualidades_final.html", "destination": "/", "permanent": true },
+    { "source": "/inversiones_final.html", "destination": "/", "permanent": true },
+    { "source": "/preguntas_frecuentes_final.html", "destination": "/", "permanent": true },
+    { "source": "/privacidad_final.html", "destination": "/privacy.html", "permanent": true },
+    { "source": "/terminos_final.html", "destination": "/privacy.html", "permanent": true }
+  ]
+}
