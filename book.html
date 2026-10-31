@@ -124,11 +124,11 @@
         <!-- Vercel has no built-in forms (the site moved off Netlify 10/31). FormSubmit.co mails each request to
              the office inbox; the first one triggers an activation email that must be clicked once. -->
         <form name="appointment" method="POST" action="https://formsubmit.co/info@zhflorida.com">
-          <input type="hidden" name="_subject" value="New appointment request — zhfloridagroup.com">
+          <!-- No _honey honeypot: phone autofill filled the off-screen box and FormSubmit silently dropped real requests (10/31). -->
+          <input type="hidden" name="_subject" id="sbj" value="New appointment request - zhfloridagroup.com">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_next" id="nxt" value="https://www.zhfloridagroup.com/thanks.html">
-          <p class="hp"><label>Don't fill this in: <input name="_honey"></label></p>
           <input type="hidden" name="source" id="src">
           <input type="hidden" name="landing" id="lnd">
           <input type="hidden" name="firstseen" id="fst">

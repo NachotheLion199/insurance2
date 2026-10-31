@@ -99,5 +99,12 @@
     if (t) { t.value = sessionStorage.getItem("zh-first") || ""; }
     var n = document.getElementById("nxt");
     if (n) { n.value = location.origin + "/thanks.html"; }
+    /* Name in the subject so Gmail doesn't stack every request into one conversation */
+    var sb = document.getElementById("sbj"), nm = document.getElementById("nm");
+    if (sb && nm && sb.form) {
+      sb.form.addEventListener("submit", function(){
+        sb.value = "New appointment request - " + (nm.value || "website").slice(0, 60);
+      });
+    }
   } catch(e){}
 })();
